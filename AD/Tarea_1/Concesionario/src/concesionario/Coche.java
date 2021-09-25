@@ -15,27 +15,30 @@ public class Coche {
     private int año;
     
     //Variable contador de coches
-    static private int contador_de_coches = 0;
+    public static int contador_de_coches = 0;
 
     
     //Constructor 1 por defecto
     public Coche() {
+        contador_de_coches++;
+        
         marca = "";
         modelo = "";
         matricula = "";
         año = 0;
         
-        contador_de_coches++;
+        
     }
 
     //Constructor 2
     public Coche(String marca, String modelo, String matricula, int año) {
+        contador_de_coches++;
+        
         this.marca = marca;
         this.modelo = modelo;
         this.matricula = matricula;
         this.año = año;
-        
-        contador_de_coches++;
+                
     }
     
     
@@ -73,20 +76,4 @@ public class Coche {
         this.año = año;
     }
 
-    public static int getContador_de_coches() {
-        return contador_de_coches;
-    }
-
-    public static void setContador_de_coches(int contador_de_coches) {
-        Coche.contador_de_coches = contador_de_coches;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
