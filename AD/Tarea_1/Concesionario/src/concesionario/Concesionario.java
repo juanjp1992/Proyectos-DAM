@@ -1,5 +1,6 @@
 
 package concesionario;
+
 //Importo arraylist para almacenar los objetos y Scanner para poder teclear en consola
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -94,6 +95,7 @@ public class Concesionario {
                 //En el caso 4 salgo del programa  
                 case 4:
                     estadoPrograma = false;
+                    System.out.println("Salió del programa con éxito.");
                     break;
             }
          //Si la condición sigue siendo true, seguirá funcionando, si no, saldrá.   
