@@ -1,0 +1,92 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package concesionario;
+
+/**
+ *
+ * @author joan-
+ */
+public class Coche {
+    //Atributos
+    private String marca, modelo, matricula;
+    private int año;
+    
+    //Variable contador de coches
+    static private int contador_de_coches = 0;
+
+    
+    //Constructor 1 por defecto
+    public Coche() {
+        marca = "";
+        modelo = "";
+        matricula = "";
+        año = 0;
+        
+        contador_de_coches++;
+    }
+
+    //Constructor 2
+    public Coche(String marca, String modelo, String matricula, int año) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.matricula = matricula;
+        this.año = año;
+        
+        contador_de_coches++;
+    }
+    
+    
+    //Getters y Setters
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public int getAño() {
+        return año;
+    }
+
+    public void setAño(int año) {
+        this.año = año;
+    }
+
+    public static int getContador_de_coches() {
+        return contador_de_coches;
+    }
+
+    public static void setContador_de_coches(int contador_de_coches) {
+        Coche.contador_de_coches = contador_de_coches;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
