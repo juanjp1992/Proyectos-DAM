@@ -20,15 +20,13 @@ public class Tarea1PSPHijo {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try{
             String numTabla = reader.readLine();
-            String tabla = "";
             while(!numTabla.equals("fin")){
                 //Recorremos con el núm que nos haya llegado las tablas multiplicando del 1 al 10.
                 for (int i = 1; i <= 10; i++) {
                     //Imprimimos por pantalla los valores
-                    tabla = tabla + numTabla + "x" + i + " = " + (Integer.parseInt(numTabla) * i) + "\n";
+                    System.out.println(numTabla + "x" + i + " = " + (Integer.parseInt(numTabla) * i));
                     
                 }
-                System.out.println(tabla);
                 //volvemos a leer el siguiente num para ver que no sea "fin".
                 numTabla = reader.readLine();
                

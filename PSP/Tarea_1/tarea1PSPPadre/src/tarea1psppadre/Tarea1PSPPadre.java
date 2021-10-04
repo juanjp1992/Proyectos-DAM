@@ -6,6 +6,7 @@
 package tarea1psppadre;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.util.Scanner;
@@ -31,36 +32,48 @@ public class Tarea1PSPPadre {
            
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("PRUEBAAAAA");
-            String line;
-            String cadena = reader.readLine();
-            
-            while(!cadena.equals("fin")){
-                for (int i = 1; i <= 10; i++) {
-                    System.out.println("Entra en el for");
-                    salidaHijo.println("3");
-                    salidaHijo.flush();
-                    System.out.println("hace flush");
-                    
-                    line = entradaHijo.readLine();
-                    while(line.equals("-1")){
+            String line = "inicio";
+            String cadena = "inicio";
+            int num = 1;
+            for (int i = 1; i <= 10; i++) {
+               salidaHijo.println(i);
+                while(!line.equals("")){
+                        salidaHijo.flush();
                         System.out.println(line);
                         line = entradaHijo.readLine();
-                    }
-                   
-                    
-                   
-                    
-                    System.out.println("PRUEBA INTERNA");
-                    
-                    cadena = reader.readLine();
-                }
-                salidaHijo.print("fin");
+
+                } 
+                line = entradaHijo.readLine();
             }
-            salidaHijo.print("fin");
+            
+            
+            /*
+            while(!cadena.equals("fin")){
+
+                for (num = 1; num <= 10; num++) {
+                    salidaHijo.println(String.valueOf(num));
+                    
+ 
+                
+          
+                while(!line.equals("")){
+                    salidaHijo.flush();
+                    System.out.println(line);
+                    line = entradaHijo.readLine();
+
+                }
+                if(num == 10){
+                    salidaHijo.print("fin");
+                    cadena = "fin";
+
+                }
+                }
+            }*/
         }
-        catch(Exception ex){
+        catch(IOException ex){
             
         }
+        
         System.out.println("salio");
     }
     
