@@ -24,6 +24,7 @@ public class AppSaludo extends Application {
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
+        //Le añado el título a la app.
         stage.setTitle("Aplicación Saludo 1.0");
         stage.show();
     }
