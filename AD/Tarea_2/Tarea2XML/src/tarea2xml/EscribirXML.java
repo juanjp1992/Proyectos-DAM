@@ -26,13 +26,10 @@ import org.w3c.dom.Text;
 
 /**
  *
- * @author joan-
+ * @author Juan Jimenez Perez
  */
 public class EscribirXML {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         //Contruyo parser analizador del documento XML usando el objeto Builder.
         DOMImplementation imp = null;
@@ -40,7 +37,7 @@ public class EscribirXML {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             
-            builder.getDOMImplementation();
+            imp = builder.getDOMImplementation();
         }
         catch(ParserConfigurationException ex){
             System.out.println("ERROR: En la creación del DOM" + ex);
@@ -49,13 +46,13 @@ public class EscribirXML {
         //Creamos un documento de XML con su nodo raiz.
         Document doc = imp.createDocument(null, "Alumno", null);
                 
-        //Le añadimos la versión XML al documento
+        //Le añadimos la versión XML al Documento
         doc.setXmlVersion("1.0");
         
-        //Creamos la etiqueta hija
-        Element etiqueta = doc.createElement("nombre");
+        //Creamos la etiqueta hija "Nombre"
+        Element etiqueta = doc.createElement("Nombre");
         
-        //Creamos un texto para luego añadirlo al nodo nombre.
+        //Creamos el texto que se pide en al tarea para luego añadirlo al nodo Nombre.
         Text nombre = doc.createTextNode("Juan Jimenez Perez");
         
         //Añadimos la etiqueta hija al documento, por lo que aparecerá dentro de la raiz alumno.
@@ -67,18 +64,19 @@ public class EscribirXML {
         //Después transformamos el document XML al archivo final XML.
         Source docFuente = new DOMSource(doc);
         
-        File ficheroXML = new File(System.getProperty("user.home") + File.separator + "Desktop", "Alumno.xml");
+        //Creamos un File con la ruta que tendrá nuestro XML.
+        File ficheroXML = new File(System.getProperty("user.home") + File.separator + "Desktop", "alumno.xml");
+        
         
         Result result = new StreamResult(ficheroXML);
         
+        //Juntamos nuestro archivo xml con todo lo que hemos creado.
         try {
             Transformer trans = TransformerFactory.newInstance().newTransformer();
             trans.transform(docFuente, result);
         } catch (TransformerException ex) {
             System.out.println("ERROR: Fallo en la transformación");
         }
-        
-        
         
     }
     
