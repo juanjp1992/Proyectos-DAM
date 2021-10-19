@@ -40,7 +40,7 @@ public class EscribirXML {
             imp = builder.getDOMImplementation();
         }
         catch(ParserConfigurationException ex){
-            System.out.println("ERROR: En la creación del DOM" + ex);
+            System.out.println("ERROR: En la creación del DOM --> " + ex);
         } 
         
         //Creamos un documento de XML con su nodo raiz.
@@ -75,7 +75,7 @@ public class EscribirXML {
             Transformer trans = TransformerFactory.newInstance().newTransformer();
             trans.transform(docFuente, result);
         } catch (TransformerException ex) {
-            System.out.println("ERROR: Fallo en la transformación");
+            System.out.println("ERROR: Fallo en la transformación --> " + ex);
         }
         
     }
