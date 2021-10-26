@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="generadorcontra.vistaPrincipalController">
+   <children>
+      <HBox prefHeight="517.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="517.0" prefWidth="317.0">
+               <children>
+                  <fx:include fx:id="formularioDatos" source="../formularioDatos/formularioDatos.fxml" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnGenerarContra" prefHeight="32.0" prefWidth="155.0" text="Generar contraseña" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin></Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnNuevosDatos" prefHeight="32.0" prefWidth="155.0" text="Nuevos Datos" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="517.0" prefWidth="300.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="25.0" prefWidth="233.0" text="Contraseña generada" VBox.vgrow="NEVER">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtContra" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="100.0" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnSalir" prefHeight="32.0" prefWidth="155.0" text="Salir" textAlignment="CENTER" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="30.0" right="30.0" top="30.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
