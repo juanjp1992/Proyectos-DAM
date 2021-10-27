@@ -1,7 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Paquete de la vista principal del proyecto generadorContra
  */
 package generadorcontra;
 
@@ -28,9 +26,7 @@ public class vistaPrincipalController implements Initializable {
     TextField txtContra = new TextField();
     
     
-    /**
-    * Acción del botón Generar Contraseña, el cual nos realizará todo para crear una nueva contraseña a partir de los campos Nombre, Apellidos y DNI.
-    */
+    //Acción del botón Generar Contraseña, el cual nos realizará todo para crear una nueva contraseña a partir de los campos Nombre, Apellidos y DNI.
     @FXML
     private void btnGenerarContra(ActionEvent event) {
         //En el caso de que no haya ningún campo vacio, genero la contraseña.
@@ -67,7 +63,7 @@ public class vistaPrincipalController implements Initializable {
     }
     
     //He creado un método extra para cifrar la contraseña y dejarla con el formato deseado, con el fin de mantener el código más limpio
-    private String cifradoContra(String nombre, String apellidos, String DNI){
+    public String cifradoContra(String nombre, String apellidos, String DNI){
         //Reformateo todos los textos para darle el formato correspondiente y además lo pongo todo en mayúsculas.
         String cifrado = 
                 (nombre.substring(0, 1) +

@@ -15,7 +15,7 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="517.0" prefWidth="317.0">
                <children>
-                  <fx:include fx:id="formularioDatos" source="../formularioDatos/formularioDatos.fxml" />
+                  <fx:include fx:id="formularioDatos" source="../formularioDatos/formularioDatos.fxml"/>
                   <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnGenerarContra" prefHeight="32.0" prefWidth="155.0" text="Generar contraseña" textAlignment="CENTER">
                      <VBox.margin>
                         <Insets top="15.0" />
