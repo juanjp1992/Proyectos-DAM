@@ -16,13 +16,13 @@ import javafx.scene.control.TextField;
 public class FormularioDatosController implements Initializable {
     //Llamo a todos los componentes.
     @FXML
-    private TextField txtNombre = new TextField();
+    private TextField txtNombre;
     
     @FXML
-    private TextField txtApellidos = new TextField();
+    private TextField txtApellidos;
     
     @FXML
-    private TextField txtDNI = new TextField();
+    private TextField txtDNI;
     
     /**
     * Su función es recuperar el campo Nombre para su uso.
@@ -54,6 +54,15 @@ public class FormularioDatosController implements Initializable {
         txtNombre.clear();
         txtApellidos.clear();
         txtDNI.clear();
+    }
+    /**
+    * Método desarrollado para la tarea RA3_E.
+    * @return Devuelve resultados diferentes según el radio que le pasemos.
+    */
+    public static double supCircunferencia(double r){
+        if(r >= 0)
+            return Math.PI * r * r;
+        return -1;
     }
     
     @Override

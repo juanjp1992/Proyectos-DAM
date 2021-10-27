@@ -63,7 +63,7 @@ public class vistaPrincipalController implements Initializable {
     }
     
     //He creado un método extra para cifrar la contraseña y dejarla con el formato deseado, con el fin de mantener el código más limpio
-    public String cifradoContra(String nombre, String apellidos, String DNI){
+    private String cifradoContra(String nombre, String apellidos, String DNI){
         //Reformateo todos los textos para darle el formato correspondiente y además lo pongo todo en mayúsculas.
         String cifrado = 
                 (nombre.substring(0, 1) +
