@@ -19,11 +19,11 @@ import javafx.scene.control.TextField;
 public class vistaPrincipalController implements Initializable {
     //Llamo a mi componente gráfico formularioDatos.
     @FXML
-    FormularioDatosController formularioDatosController = new FormularioDatosController();
+    FormularioDatosController formularioDatosController;
     
     //Llamo a mi componente txtContra para hacer uso de el.
     @FXML
-    TextField txtContra = new TextField();
+    TextField txtContra;
     
     
     //Acción del botón Generar Contraseña, el cual nos realizará todo para crear una nueva contraseña a partir de los campos Nombre, Apellidos y DNI.
