@@ -11,8 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="60dp"
-        android:text="Nombre Apellidos DNI"
+        android:layout_marginTop="20dp"
+        android:text="@string/nombre_apellidos_dni"
         android:textColor="#FF0000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,11 +20,11 @@
     <EditText
         android:id="@+id/txtMensaje"
         android:layout_width="340dp"
-        android:layout_height="164dp"
+        android:layout_height="104dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Introduce tu mensaje de texto"
+        android:hint="@string/introduce_tu_mensaje_de_texto"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:hint="Núm. Teléfono"
+        android:hint="@string/n_m_tel_fono"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#F44336"
-        android:text="Estado Conexión"
+        android:text="@string/estado_conexi_n"
         app:layout_constraintBottom_toBottomOf="@+id/btnEnviarSMS"
         app:layout_constraintEnd_toEndOf="@+id/txtMensaje"
         app:layout_constraintTop_toTopOf="@+id/btnEnviarSMS" />
@@ -58,7 +58,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:backgroundTint="#CF2E2E"
-        android:text="Enviar SMS"
+        android:text="@string/enviar_sms"
         app:layout_constraintStart_toStartOf="@+id/txtMensaje"
         app:layout_constraintTop_toBottomOf="@+id/txtMensaje" />
+
+    <WebView
+        android:id="@+id/inputWeb"
+        android:layout_width="0dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviarSMS" />
 </androidx.constraintlayout.widget.ConstraintLayout>

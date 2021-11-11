@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Tarea2PMDM</string>
+    <string name="n_m_tel_fono">Núm. Teléfono</string>
+    <string name="estado_conexi_n">Estado Conexión</string>
+    <string name="enviar_sms">Enviar SMS</string>
+    <string name="introduce_tu_mensaje_de_texto">Introduce tu mensaje de texto</string>
+    <string name="nombre_apellidos_dni">Nombre Apellidos DNI</string>
 </resources>
