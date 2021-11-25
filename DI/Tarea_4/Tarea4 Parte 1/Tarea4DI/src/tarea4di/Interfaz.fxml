@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="fondo" fx:id="panelContenedor" maxHeight="450.0" prefHeight="450.0" prefWidth="340.0" stylesheets="@../estilos/estilo1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea4di.InterfazController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="23.0" layoutY="95.0" prefHeight="461.0" prefWidth="340.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="aplicacionEstilo" alignment="CENTER" prefHeight="39.0" prefWidth="327.0" text="Aplicación de estilo">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#aplicarEstilo1" prefHeight="48.0" prefWidth="271.0" text="Aplicar estilo 1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#aplicarEstilo2" prefWidth="271.0" text="Aplicar estilo 2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#aplicarEstilo3" prefWidth="271.0" text="Aplicar estilo 3">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#resetear" prefWidth="271.0" text="Resetear">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#salir" prefWidth="271.0" text="Salir">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label alignment="TOP_RIGHT" prefHeight="17.0" prefWidth="271.0" styleClass="autor" text="Creación de estilo hecha por:" textAlignment="RIGHT">
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+            </Label>
+            <Label id="creacionEstilo2" alignment="TOP_RIGHT" layoutX="93.0" layoutY="357.0" prefWidth="271.0" styleClass="autor" text="Juan Jimenez Perez" textAlignment="RIGHT" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

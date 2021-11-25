@@ -1,0 +1,50 @@
+/*Le doy estilos a todos las etiquetas Button
+por lo tanto le doy a todos los botones*/
+Button{
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 28px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-style: italic;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-background-color: #008287;
+    
+}
+/*Con hover le doy un aspecto a todos 
+los Button cuando paso el raton por encima*/
+Button:hover{
+    -fx-background-color: #333333;
+    -fx-font-size: 22px;
+}
+/*Con pressed le doy un aspecto 
+ a los Button cuando son pulsados*/
+Button:pressed{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+/*Con este id # le doy aspecto al 
+titular "Aplicación de estilo"*/
+#aplicacionEstilo{
+    -fx-font-size: 36px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-style: italic;
+    -fx-font-family: "Helvetica";
+}
+/*Con este class autor le doy aspecto
+a ambos componentes Label, para
+"Creación de estilo hecha por: ", y 
+también a "Juan Jimenez Perez".*/
+.autor{
+    -fx-text-fill: #FFFF00;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12px;
+}
+/*Con este id le doy aspecto al un
+color de fondo al panel AnchorPane.*/
+#fondo{
+    -fx-background-color: #000000;
+
+}
