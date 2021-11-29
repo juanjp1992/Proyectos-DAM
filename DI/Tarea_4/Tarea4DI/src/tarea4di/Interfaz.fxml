@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="fondo" fx:id="panelContenedor" maxHeight="450.0" prefHeight="450.0" prefWidth="340.0" stylesheets="@../estilos/estilo1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea4di.InterfazController">
+<AnchorPane id="fondo" fx:id="panelContenedor" maxHeight="450.0" prefHeight="450.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea4di.InterfazController">
    <children>
       <VBox alignment="TOP_CENTER" layoutX="23.0" layoutY="95.0" prefHeight="461.0" prefWidth="340.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
